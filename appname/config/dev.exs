@@ -13,7 +13,7 @@ config :appname, AppnameWeb.Endpoint,
   check_origin: false,
   watchers: [
     node: ["node_modules/webpack/bin/webpack.js", "--watch", "--colors",
-    cd: Path.expand("../../assets", __DIR__)
+    cd: Path.expand("../assets", __DIR__)
   ]]
 
 # ## SSL Support

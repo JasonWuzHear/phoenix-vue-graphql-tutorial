@@ -1,0 +1,34 @@
+version: "3"
+
+volumes:
+  staticfiles:
+  data:
+  dep:
+
+networks:
+  app:
+  db:
+
+services:
+  phoenix:
+    image: marcelocg/phoenix
+    container_name: phoenix
+    networks:
+      - app
+      - db
+    volumes:
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    networks:
+      -db
+    volumes:
+      - ./postgres/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+  
+
+
+

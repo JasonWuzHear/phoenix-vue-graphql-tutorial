@@ -1,3 +1,4 @@
 .vscode
 assets/*
 !assets/package.json
+!assets/webpack.config.json

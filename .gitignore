@@ -1,4 +1,2 @@
 .vscode
-assets/*
-!assets/package.json
-!assets/webpack.config.js
+appname/assets/node_modules

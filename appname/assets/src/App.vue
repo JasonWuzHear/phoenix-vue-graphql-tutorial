@@ -22,7 +22,7 @@ export default {
     // Apollo will assign the result of that query to the 'user' key in data.
     user: gql`{
       user(id: "1"){ 
-        name // we want the name attribute of the user returned.
+        name
       }
     }`,
   }
